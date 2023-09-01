@@ -38,7 +38,7 @@ export const EsquerdaLogin = styled.div`
 
 export const H1 = styled.h1`
   color: white;
-  padding-left: 15%;
+  padding-left: 08%;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 05%;
   letter-spacing: 1px;

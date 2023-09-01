@@ -3,8 +3,16 @@ import { BotaoRosa } from "../../components/Botao/styled"
 import { ContainerGeral } from "../../StyledGlobal"
 import {CardLogin, DireitaLogin, EsquerdaLogin, H1, H3, H4, ImagDireira, Input, Paragrafo, Textfield } from "./styled"
 import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
+import { useNavigate } from "react-router-dom"
 
 function Login(){
+
+    const navigate = useNavigate()
+
+    const goToFeed = ()=>{
+        navigate('/feed')
+    }
+
     return(
         <>
         <ContainerGeral>
@@ -40,7 +48,7 @@ function Login(){
                     </Textfield>
 
 
-                   <BotaoRosa>
+                   <BotaoRosa onClick={goToFeed}>
                      Entrar
                    </BotaoRosa>
 

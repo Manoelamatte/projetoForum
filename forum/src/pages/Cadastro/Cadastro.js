@@ -3,7 +3,6 @@ import { CardCadastro, DireitaCad, EsquerdaCard, ImagemLogo, ImgCadastro, Titulo
 import BarbieSpeak from "../../assets/BarbieSpeak.png"
 import { Input, Textfield } from "../Login/styled"
 import Botao from "../../components/Botao/Botao"
-import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 
 function Cadastro(){
     return(
@@ -20,8 +19,6 @@ function Cadastro(){
                 </EsquerdaCard>
 
                 <DireitaCad>
-                    <ImagemLogo scr={LogoSpeakOut}/>
-
 
                     <TituloDireita>
                         Cadastre-se
