@@ -1,10 +1,19 @@
 import { ContainerGeral } from "../../StyledGlobal"
-import { CardCadastro, DireitaCad, EsquerdaCard, ImagemLogo, ImgCadastro, TituloCadastro, TituloDireita } from "./styled"
+import { CardCadastro, DireitaCad, EsquerdaCard, ImagemLogo, ImagemSpeakCadastro, ImgCadastro, TituloCadastro, TituloDireita } from "./styled"
 import BarbieSpeak from "../../assets/BarbieSpeak.png"
-import { Input, Textfield } from "../Login/styled"
+import { ImagDireira, Input, Textfield } from "../Login/styled"
 import Botao from "../../components/Botao/Botao"
+import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
+import { useNavigate } from "react-router-dom"
 
 function Cadastro(){
+
+    const navigate = useNavigate()
+
+    const goToFeed = ()=>{
+        navigate('/feed')
+    }
+
     return(
         <>
         <ContainerGeral>
@@ -20,6 +29,8 @@ function Cadastro(){
 
                 <DireitaCad>
 
+                    <ImagemSpeakCadastro  src={LogoSpeakOut}/>
+
                     <TituloDireita>
                         Cadastre-se
                     </TituloDireita>
@@ -31,9 +42,7 @@ function Cadastro(){
                     <Input  type="text" name="email" placeholder="Email"></Input>
                     </Textfield>
 
-                    <Botao>
-                        Entrar
-                    </Botao>
+                   <Botao/>
                 </DireitaCad>
             </CardCadastro>
         </ContainerGeral>

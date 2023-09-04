@@ -1,22 +1,34 @@
-import { useNavigate } from "react-router-dom"
-import { BotaoEntrar } from "./styled"
+
+import { ContainerFeed, ContainerPost, PostContainer } from "./styled"
+import Header from "../../components/Header/Header"
+import { ContainerGeral } from "../../StyledGlobal"
+
 
 function Feed(){
-    const navigate = useNavigate()
-
-    const goingLogin = ()=>{
-        navigate('/login')
-    }
-
+ 
 
     return(
         <>
-        oi
+          <ContainerGeral>
+          <Header/>
 
-        <BotaoEntrar onClick={goingLogin}>
-            Entrar
-        </BotaoEntrar>
-        
+        <ContainerFeed>
+
+             <PostContainer>
+                    OI
+            </PostContainer>
+
+            <PostContainer>
+                   OI
+            </PostContainer>
+
+            <PostContainer>
+                   OI
+            </PostContainer>
+
+         </ContainerFeed>
+
+        </ContainerGeral>
         </>
     )
 }

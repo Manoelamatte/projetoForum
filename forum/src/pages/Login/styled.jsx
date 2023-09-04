@@ -8,6 +8,7 @@ export const CardLogin = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  margin-left: 200px;
 `
 
 // direita
@@ -46,7 +47,7 @@ export const H1 = styled.h1`
 
 export const H3 = styled.h3`
     color: white;
-    padding: 10%;
+    padding: 15%;
     padding-left: 15%;
     font-family: Arial, Helvetica, sans-serif;
 `
@@ -75,12 +76,22 @@ export const Input = styled.input`
 
 export const Paragrafo = styled.p`
    color: #f448A0;
-   margin-left: 170px;
+   margin-left: 120px;
+   justify-content: space-between;
 `
 
 export const ImagDireira = styled.img`
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 70px;
     height: 15vh;
     weight: 15vw;
+`
+
+export const BotaoIrCadastro = styled.button`
+  width: 30%;
+  padding: 05px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: #f448A0;
 `

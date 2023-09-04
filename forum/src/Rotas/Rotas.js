@@ -13,6 +13,7 @@ function Rotas(){
                 <Route index element ={<Feed/>}/>
                 <Route path="login" element={<Login/>}/>
                 <Route path="feed" element={<Feed/>}/>
+                <Route path="cadastro" element={<Cadastro/>}/>
             </Routes>
         </BrowserRouter>
         </>

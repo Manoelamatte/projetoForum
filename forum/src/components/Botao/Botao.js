@@ -1,9 +1,18 @@
+import { useNavigate } from "react-router-dom"
 import { BotaoRosa } from "./styled"
 
 function Botao(){
+
+    
+    const navigate = useNavigate()
+
+    const goToFeed = ()=>{
+        navigate('/feed')
+    }
+
     return(
         <>
-        <BotaoRosa>
+        <BotaoRosa onClick={goToFeed}>
             Entrar
         </BotaoRosa>
         </>

@@ -1,7 +1,7 @@
 import React from "react"
 import { BotaoRosa } from "../../components/Botao/styled"
 import { ContainerGeral } from "../../StyledGlobal"
-import {CardLogin, DireitaLogin, EsquerdaLogin, H1, H3, H4, ImagDireira, Input, Paragrafo, Textfield } from "./styled"
+import {BotaoIrCadastro, CardLogin, DireitaLogin, EsquerdaLogin, H1, H3, H4, ImagDireira, Input, Paragrafo, Textfield, TextoeBotao } from "./styled"
 import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 import { useNavigate } from "react-router-dom"
 
@@ -11,6 +11,10 @@ function Login(){
 
     const goToFeed = ()=>{
         navigate('/feed')
+    }
+
+    const goToCadastro = ()=>{
+        navigate('/cadastro')
     }
 
     return(
@@ -51,13 +55,21 @@ function Login(){
                    <BotaoRosa onClick={goToFeed}>
                      Entrar
                    </BotaoRosa>
+                 
 
-                   <Paragrafo>
-                      Não tem uma conta? 
-                   </Paragrafo>
+                    <Paragrafo>
+                        Não tem uma conta? 
+
+                        <BotaoIrCadastro onClick={goToCadastro}>
+                        Cadastre-se
+                        </BotaoIrCadastro>
+
+                    </Paragrafo>
+
+                 
                 </DireitaLogin>
 
-            </CardLogin>
+            </CardLogin>            
         </ContainerGeral>
         </>
     )

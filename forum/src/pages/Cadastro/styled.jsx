@@ -9,6 +9,7 @@ export const CardCadastro = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  margin-left: 200px;
 `
 // direta
 export const DireitaCad = styled.div`
@@ -55,4 +56,10 @@ export const TituloDireita = styled.h2`
     padding-left: 40%;
     font-family: Arial, Helvetica, sans-serif;
     color: #f448A0;
+`
+export const ImagemSpeakCadastro = styled.img`
+  padding-top: 10px;
+  padding-left: 70px;
+  height: 15vh;
+  weight: 15vw;
 `
