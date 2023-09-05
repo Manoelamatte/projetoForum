@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { ConatinerHeader, ImagemHeader, Pesquisar } from "./styled";
 import { BotaoEntrar } from "../../pages/Feed/styled";
 import BarbieSpeak from "../../assets/BarbieSpeak.png"
+import IconeMenu from "../../assets/IconeMenu.png"
 
 function Header(){
 
@@ -15,6 +16,8 @@ function Header(){
     return(
         <>
         <ConatinerHeader>
+
+            <ImagemHeader src={IconeMenu}/>
 
             <Pesquisar type="text" name="texto" placeholder="Busca no SpeakOut"/>
            

@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const ContainerFeed = styled.div`
     grid-area: container;
+    justify-content: space-between;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +29,19 @@ export const BotaoEntrar = styled.button`
 
 export const PostContainer = styled.div`
   width: 50vw;
-  height: 20vh;
+  height: 30vh;
   background-color: white;
   border-radius: 0.938rem;
   margin: 10px;
+`
+
+export const BotaoFeed = styled.button`
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin-left: 900px;
+`
+
+export const ImagemFeed = styled.img`
+  height: 50px;
 `
