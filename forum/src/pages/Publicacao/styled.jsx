@@ -1,5 +1,16 @@
 import styled from "styled-components"
 
+
+export const PublicacaoPost = styled.div`
+    width: 50vw;
+    height: 30vh;
+    background-color: white;
+    align-items: center;
+    justy-content: center;
+    
+    border-radius: 0.938rem;
+`
+
 export const HamburguerButton = styled.button`
     background-color: transparent;
     border: none;
@@ -18,13 +29,11 @@ export const PostBoxTexto = styled.p`
     font-size: 14px;
     position: relative;
     left: 42px;
-    top: 7px;
 `
 export const LocalDeEscrita = styled.div`
     padding-left: 40px;
     padding-right: 40px;
 `
-
 
 export const EscrevaAquiArea = styled.textarea`
     background-color: rgba(255, 212, 234, 1);
@@ -34,4 +43,20 @@ export const EscrevaAquiArea = styled.textarea`
     height: 40px;
     /* outline: none; */
     font-family: "Poppins", sans-serif;
+`
+export const BotaoPublicar = styled.button`
+    position: relative;
+    left: 503px;
+    bottom: 140px;
+    height: 31px;
+    width: 108px;
+    background-color: rgba(236, 67, 153, 1);
+    color: white;
+    border-radius: 1.875rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
 `

@@ -1,11 +1,27 @@
-import React from "react"
+import React, { useState } from "react"
 import { BotaoRosa } from "../../components/Botao/styled"
-import { ContainerGeral } from "../../StyledGlobal"
+import { ContainerGeradl2222 } from "../../StyledGlobal"
 import {BotaoIrCadastro, CardLogin, DireitaLogin, EsquerdaLogin, H1, H3, H4, ImagDireira, Input, Paragrafo, Textfield, TextoeBotao } from "./styled"
 import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 import { useNavigate } from "react-router-dom"
+import axios from "axios"
 
 function Login(){
+
+    // api
+
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
+
+    const handleSubmit = (event)=>{
+
+        const credencials = {email, senha}
+
+        axios.post()
+    }
+ 
+    
+// inicio rotas
 
     const navigate = useNavigate()
 
@@ -19,7 +35,7 @@ function Login(){
 
     return(
         <>
-        <ContainerGeral>
+       <ContainerGeradl2222>
             <CardLogin>
 
                 <EsquerdaLogin>
@@ -47,8 +63,8 @@ function Login(){
                     </H4>
 
                     <Textfield>
-                    <Input type="text" name="email" placeholder="Email"></Input>
-                    <Input type="password" name="senha" placeholder="Senha"></Input>
+                    <Input type="text" name="email" placeholder="Email" value={email}></Input>
+                    <Input type="password" name="senha" placeholder="Senha" value={senha}></Input>
                     </Textfield>
 
 
@@ -70,7 +86,7 @@ function Login(){
                 </DireitaLogin>
 
             </CardLogin>            
-        </ContainerGeral>
+            </ContainerGeradl2222>
         </>
     )
 }

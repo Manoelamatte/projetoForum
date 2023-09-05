@@ -9,6 +9,7 @@ export const CardLogin = styled.div`
   align-items: center;
   border-radius: 20px;
   margin-left: 200px;
+  margin-top: 30px;
 `
 
 // direita

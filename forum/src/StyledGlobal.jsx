@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components"
+import FundoB from "./assets/FundoB.png"
+import fundoBarbie from "./assets/fundoBarbie.png"
 
 export const GlobalStyle = createGlobalStyle`
     body{
@@ -8,7 +10,28 @@ export const GlobalStyle = createGlobalStyle`
 
 `
 export const ContainerGeral = styled.div`
-    width: 100vw;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; 
+    background-image:url(${FundoB});
+`
+
+export const ContainerGeradl2222 = styled.div`
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 100vh; 
-    background-color: pink;
+    background-image: url(${fundoBarbie})
+`
+
+export const GeralPost = styled.div`
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh; 
+    background-image:url(${FundoB});
 `

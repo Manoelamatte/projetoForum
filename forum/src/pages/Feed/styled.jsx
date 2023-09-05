@@ -4,12 +4,11 @@ export const ContainerFeed = styled.div`
     grid-area: container;
     justify-content: space-between;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
      display: flex;
     flex-direction: column;
-    margin: 30px;
+
 `
 
 export const BotaoEntrar = styled.button`
@@ -29,19 +28,25 @@ export const BotaoEntrar = styled.button`
 
 export const PostContainer = styled.div`
   width: 50vw;
-  height: 30vh;
+  height: 25vh;
   background-color: white;
+  align-items: center;
   border-radius: 0.938rem;
   margin: 10px;
+
 `
 
 export const BotaoFeed = styled.button`
     cursor: pointer;
     background: transparent;
     border: none;
-    margin-left: 900px;
+    margin-left: 950px;
 `
 
 export const ImagemFeed = styled.img`
   height: 50px;
+`
+
+export const Juncao = styled.div`
+  justify-content: space-between;
 `

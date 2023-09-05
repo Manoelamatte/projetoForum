@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const ConatinerHeader = styled.header`
    background-color: #EC4399;
    height: 04vw;
-   justify-content: center;
+   justify-content: space-between;
    display: flex;
    align-items: center;
-   padding-top: 15px;
+   padding-top: 10px;
 `
 
 export const Pesquisar = styled.input`
@@ -20,6 +20,7 @@ export const Pesquisar = styled.input`
     flex-shrink: 0;
     align-items: center;
     outline: none;
+    margin-left: 280px;
 `
 
 export const ImagemHeader = styled.img`
