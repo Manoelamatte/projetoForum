@@ -1,6 +1,6 @@
 import { PostContainer } from "../Feed/styled"
 import profilecircle from "../../assets/profilecircle.png"
-import { EscrevaAquiArea, ImagemProfire, PostBoxTexto, LocalDeEscrita, BotaoPublicar, ContainerPubli } from "./styled"
+import { EscrevaAquiArea, ImagemProfire, PostBoxTexto, LocalDeEscrita, BotaoPublicar } from "./styled"
 import { GeralPost } from "../../StyledGlobal"
 import Header from "../../components/Header/Header"
 
