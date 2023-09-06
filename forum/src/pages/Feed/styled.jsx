@@ -8,7 +8,6 @@ export const ContainerFeed = styled.div`
     flex-wrap: wrap;
      display: flex;
     flex-direction: column;
-
 `
 
 export const BotaoEntrar = styled.button`

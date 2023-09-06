@@ -4,7 +4,7 @@ import { ContainerGeradl2222 } from "../../StyledGlobal"
 import {BotaoIrCadastro, CardLogin, DireitaLogin, EsquerdaLogin, H1, H3, H4, ImagDireira, Input, Paragrafo, Textfield, TextoeBotao } from "./styled"
 import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 import { useNavigate } from "react-router-dom"
-import axios from "axios"
+// import axios from "axios"
 
 function Login(){
 

@@ -53,7 +53,6 @@ export const ImagemLogo = styled.img`
 `
 
 export const TituloDireita = styled.h2`
-    padding-top: 2%;
     padding-left: 40%;
     font-family: Arial, Helvetica, sans-serif;
     color: #f448A0;
