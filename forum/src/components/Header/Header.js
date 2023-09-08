@@ -12,7 +12,6 @@ function Header(){
         navigate('/login')
     }
 
-
     return(
         <>
         <ConatinerHeader>

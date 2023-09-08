@@ -42,6 +42,13 @@ export const BotaoFeed = styled.button`
     margin-left: 950px;
 `
 
+export const BotaoLogoOut = styled.button`
+    cursor: pointer;
+    background: pink;
+    border: none;
+    margin-left: 950px;
+`
+
 export const ImagemFeed = styled.img`
   height: 50px;
 `

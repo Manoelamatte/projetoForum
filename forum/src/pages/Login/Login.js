@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import { BotaoRosa } from "../../components/Botao/styled"
 import { ContainerGeradl2222 } from "../../StyledGlobal"
-import {BotaoIrCadastro, CardLogin, DireitaLogin, EsquerdaLogin, H1, H3, H4, ImagDireira, Input, Paragrafo, Textfield, TextoeBotao } from "./styled"
+import {BotaoIrCadastro, CardLogin, DireitaLogin, EsquerdaLogin, H1, H3, H4, ImagDireira, Input, Paragrafo, Textfield } from "./styled"
 import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 import { useNavigate } from "react-router-dom"
-// import axios from "axios"
+import axios from "axios"
 
 function Login(){
 
@@ -13,21 +13,36 @@ function Login(){
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
 
-    const handleSubmit = (event)=>{
+    const navigate = useNavigate()
+
+    const saveUserinfoLocalStorage = (token)=>{
+        localStorage.setItem('token', token)
+        localStorage.setItem('email', email)
+    }
+
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+
 
         const credencials = {email, senha}
 
-        axios.post()
+        axios.post('http://localhost:8000/login', credencials,{
+            headers:{
+                'Content-Type': 'application/json',
+
+            }
+        })
+        .then(response =>{
+            alert(response.data.message)
+            saveUserinfoLocalStorage(response.data.token)
+            navigate('/feed')
+        })
+        .catch(error => console.log(error))
     }
  
     
 // inicio rotas
 
-    const navigate = useNavigate()
-
-    const goToFeed = ()=>{
-        navigate('/feed')
-    }
 
     const goToCadastro = ()=>{
         navigate('/cadastro')
@@ -62,16 +77,20 @@ function Login(){
                         Login
                     </H4>
 
+                    <form onSubmit={handleSubmit}>
                     <Textfield>
-                    <Input type="text" name="email" placeholder="Email" value={email}></Input>
-                    <Input type="password" name="senha" placeholder="Senha" value={senha}></Input>
+                    <Input type="text" name="email" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)}></Input>
+                    
+
+
+                    <Input type="password" name="senha" placeholder="Senha" value={senha} onChange={(e)=>setSenha(e.target.value)}></Input>
                     </Textfield>
 
-
-                   <BotaoRosa onClick={goToFeed}>
+                    <BotaoRosa type="submit">
                      Entrar
-                   </BotaoRosa>
-                 
+                    </BotaoRosa> 
+                    </form>
+
 
                     <Paragrafo>
                         Não tem uma conta? 
