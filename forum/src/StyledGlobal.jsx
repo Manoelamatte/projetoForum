@@ -24,7 +24,7 @@ export const ContainerGeradl2222 = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100vh; 
-    background-image: url(${fundoBarbie})
+    background-image: url(${fundoBarbie});
 `
 
 export const GeralPost = styled.div`
@@ -34,4 +34,11 @@ export const GeralPost = styled.div`
     width: 100%;
     height: 100vh; 
     background-image:url(${FundoB});
+`
+
+export const ContainerCenter = styled.div`
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 `

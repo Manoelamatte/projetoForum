@@ -2,13 +2,33 @@ import styled from "styled-components"
 
 
 export const PublicacaoPost = styled.div`
-    width: 50vw;
-    height: 30vh;
-    background-color: white;
+  width: 70vw;
+  height: 55vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 100px;
+  border-radius: 20px;
+`
+
+export const CardSuperior = styled.div`
+    height: 10vh;
+    width: 70vw;
+    justify-content: space-around;
+    display: flex;
     align-items: center;
-    justy-content: center;
-    
-    border-radius: 0.938rem;
+    margin-top: 05px;
+`
+
+export const CardInferior = styled.div`
+    height: 40vh;
+    width: 55vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 `
 
 export const HamburguerButton = styled.button`
@@ -27,36 +47,51 @@ export const PostBoxTexto = styled.p`
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
-    position: relative;
-    left: 42px;
+    margin-right: 650px;
 `
-export const LocalDeEscrita = styled.div`
-    padding-left: 40px;
-    padding-right: 40px;
-`
+
+// export const LocalDeEscrita = styled.div`
+//     padding-left: 40px;
+//     padding-right: 40px;
+//     background-color: blue;
+// `
 
 export const EscrevaAquiArea = styled.textarea`
     background-color: rgba(255, 212, 234, 1);
     color: rgba(180, 0, 92, 1);
     resize: none;
     width: 100%;
-    height: 40px;
+    height: 30vh;
+    border-radius: 10px;
     /* outline: none; */
+    border: none;
     font-family: "Poppins", sans-serif;
+
+    &:: placeholder{
+        padding: 20px;
+        color: rgba(180, 0, 92, 1);
+        font-weight: bold;
+    }
 `
+
+export const TextoAcontecendo = styled.p`
+    color: rgba(180, 0, 92, 1);
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 15pt;
+`
+
 export const BotaoPublicar = styled.button`
-    position: relative;
-    left: 503px;
-    bottom: 140px;
-    height: 31px;
-    width: 108px;
+    height: 30px;
+    width: 140px;
     background-color: rgba(236, 67, 153, 1);
     color: white;
-    border-radius: 1.875rem;
+    border-radius: 30px;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     border: none;
     cursor: pointer;
+    margin-right: 40px;
 `

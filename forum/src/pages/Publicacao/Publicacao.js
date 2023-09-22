@@ -1,29 +1,46 @@
 import { PostContainer } from "../Feed/styled"
 import profilecircle from "../../assets/profilecircle.png"
-import { EscrevaAquiArea, ImagemProfire, PostBoxTexto, LocalDeEscrita, BotaoPublicar } from "./styled"
-import { GeralPost } from "../../StyledGlobal"
+import { EscrevaAquiArea, ImagemProfire, PostBoxTexto, LocalDeEscrita, BotaoPublicar, PublicacaoPost, CardSuperior, CardInferior, TextoAcontecendo } from "./styled"
+import { ContainerCenter, ContainerGeradl2222, ContainerGeral, GeralPost } from "../../StyledGlobal"
 import Header from "../../components/Header/Header"
 
 function Publicacao(){
     return(
         <>
         <GeralPost>
-            <Header/>
+        <Header/>
+        
+        <ContainerCenter>
+            <PublicacaoPost>
 
-            <PostContainer>
-                <ImagemProfire src={profilecircle}/>
-                <PostBoxTexto>
-                  fulana
-                </PostBoxTexto>
+            <CardSuperior>
+              <ImagemProfire src={profilecircle}/>
 
-                <BotaoPublicar>Publicar</BotaoPublicar>
+              <PostBoxTexto>
+                fulana
+              </PostBoxTexto>
 
-                <LocalDeEscrita>
-                  <EscrevaAquiArea> </EscrevaAquiArea>
-                </LocalDeEscrita>
-            </PostContainer>
-            
+              <BotaoPublicar>
+                Publicar
+              </BotaoPublicar>
+            </CardSuperior>
+
+            <CardInferior>
+
+              <TextoAcontecendo>
+                O que está acontecendo?
+              </TextoAcontecendo>
+                  
+                <EscrevaAquiArea type="text" name="texto" placeholder="Escreva aqui...">
+                  
+                </EscrevaAquiArea>
+                 
+            </CardInferior>
+
+            </PublicacaoPost>
+         </ContainerCenter>
         </GeralPost>
+
         </>
     )
 }
