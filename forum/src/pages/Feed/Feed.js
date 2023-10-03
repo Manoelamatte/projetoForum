@@ -7,6 +7,7 @@ import maisBotao from "../../assets/maisBotao.png"
 import profilecircle from "../../assets/profilecircle.png" 
 import { ImagemProfire, PostBoxTexto } from "../Publicacao/styled"
 import { useEffect } from "react"
+import Menu from "../../components/Menu/Menu"
 
 function Feed(){
 
@@ -33,7 +34,7 @@ function Feed(){
     return(
         <>
           <ContainerGeral>
-              <Header/>
+              <Menu/>
               <ContainerFeed>
 
                 <BotaoLogoOut  onClick={handleLogout}>
@@ -52,6 +53,11 @@ function Feed(){
                <PostContainer>
                 <ImagemProfire src={profilecircle}/>
                </PostContainer>
+
+               <PostContainer>
+                <ImagemProfire src={profilecircle}/>
+               </PostContainer>
+
 
         
                <BotaoFeed onClick={goToPubli}>

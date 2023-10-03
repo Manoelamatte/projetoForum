@@ -40,6 +40,8 @@ export const BotaoFeed = styled.button`
     background: transparent;
     border: none;
     margin-left: 950px;
+    margin-top: 35%;
+    position: fixed;
 `
 
 export const BotaoLogoOut = styled.button`

@@ -3,12 +3,13 @@ import profilecircle from "../../assets/profilecircle.png"
 import { EscrevaAquiArea, ImagemProfire, PostBoxTexto, LocalDeEscrita, BotaoPublicar, PublicacaoPost, CardSuperior, CardInferior, TextoAcontecendo } from "./styled"
 import { ContainerCenter, ContainerGeradl2222, ContainerGeral, GeralPost } from "../../StyledGlobal"
 import Header from "../../components/Header/Header"
+import Menu from "../../components/Menu/Menu"
 
 function Publicacao(){
     return(
         <>
         <GeralPost>
-        <Header/>
+        <Menu/>
         
         <ContainerCenter>
             <PublicacaoPost>

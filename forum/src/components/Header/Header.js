@@ -3,6 +3,7 @@ import { ConatinerHeader, ImagemHeader, Pesquisar } from "./styled";
 import { BotaoEntrar } from "../../pages/Feed/styled";
 import BarbieSpeak from "../../assets/BarbieSpeak.png"
 import IconeMenu from "../../assets/IconeMenu.png"
+import Menu from "../Menu/Menu";
 
 function Header(){
 
@@ -16,7 +17,7 @@ function Header(){
         <>
         <ConatinerHeader>
 
-            <ImagemHeader src={IconeMenu}/>
+            {/* <ImagemHeader src={IconeMenu}/> */}
 
             <Pesquisar type="text" name="texto" placeholder="Busca no SpeakOut"/>
            
