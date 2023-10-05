@@ -13,20 +13,7 @@ function Feed(){
 
     const navigate = useNavigate()
 
-    useEffect(() =>{
-        const token = localStorage.getItem('token')
-        if(!token){
-            navigate('/')
-        }
-    }, [navigate])
-
-    const handleLogout = ()=>{
-        localStorage.removeItem('token')
-        localStorage.removeItem('email')
-        navigate('/home')
-    }
-
-
+    
     const goToPubli = ()=>{
         navigate('/publicacao')
     }
@@ -37,25 +24,21 @@ function Feed(){
               <Menu/>
               <ContainerFeed>
 
-                <BotaoLogoOut  onClick={handleLogout}>
-                Logoout
-                </BotaoLogoOut>
-
                <PostContainer>
-                <ImagemProfire src={profilecircle}/>
-                <PostBoxTexto>fulana</PostBoxTexto>
+                    <ImagemProfire src={profilecircle}/>
+                    <PostBoxTexto>fulana</PostBoxTexto>
                </PostContainer>
 
                <PostContainer>
-               <ImagemProfire src={profilecircle}/>
+                    <ImagemProfire src={profilecircle}/>
                </PostContainer>
         
                <PostContainer>
-                <ImagemProfire src={profilecircle}/>
+                     <ImagemProfire src={profilecircle}/>
                </PostContainer>
 
                <PostContainer>
-                <ImagemProfire src={profilecircle}/>
+                    <ImagemProfire src={profilecircle}/>
                </PostContainer>
 
 

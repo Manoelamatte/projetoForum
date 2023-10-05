@@ -15,14 +15,19 @@ export const TituloMenu = styled.h2`
 
 export const BotaoMenu = styled.button`
     border: none;
-    width: 100vw;
-    padding: 20px;
+    width: 12vw;
+    padding: 11px;
     align-items: center;
     justify-content: start;
     display: flex;
     cursor: pointer;
-    color:  #950101;
-    background-color: transparent;
+    font-size: 13pt;
+    color:  rgba(180, 0, 92, 1);
+    background-color: rgba(255, 212, 234, 1);
+    border-radius: 40px;
+    justify-content: center;
+    font-weight: bold;
+    margin-left: 20%;
 
     &:hover{
         background-color: #ffb4b4;
@@ -44,4 +49,28 @@ export const MenuLogo = styled.img`
     height: 80px;
     weight: 80px;
     margin: 30px;
+`
+
+export const BotaoSlideBar = styled.button`
+    border: none;
+    width: 100vw;
+    padding: 10px;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    cursor: pointer;
+    color:  #EC4399;
+    background-color: transparent;
+
+    &:hover{
+        background-color:  #B4005C;;
+       
+    }
+`
+
+export const InputImagem = styled.img`
+    position: absolute;
+    left: 30px;
+    /* width: 12px; */
+    top: 35px;
 `

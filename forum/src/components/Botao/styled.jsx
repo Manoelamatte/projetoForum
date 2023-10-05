@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 export const BotaoRosa = styled.button`
     width: 30%;
-    padding: 13px;
-    margin: 20px;
+    padding: 12px;
+    margin: 05px;
     margin-left: 170px;
     border: none;
     border-radius: 10px;

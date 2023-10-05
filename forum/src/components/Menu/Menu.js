@@ -1,6 +1,6 @@
 import { ConatinerHeader, ImagemHeader, Pesquisar } from "../Header/styled";
 import IconeMenu from "../../assets/IconeMenu.png"
-import { BotaoMenu, IconesMenu, ImagemMenu, MenuLogo, Menutitulo } from "./styled";
+import { BotaoMenu, BotaoSlideBar, IconesMenu, ImagemMenu, MenuLogo, Menutitulo, InputImagem } from "./styled";
 import style from "./style.css";
 import { useNavigate } from "react-router-dom";
 import { BotaoLogoOut } from "../../pages/Feed/styled";
@@ -8,10 +8,29 @@ import { useEffect } from "react";
 import iconHouse from "../../assets/iconHouse.png"
 import iconSeta from "../../assets/iconSeta.png"
 import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
+import BarbieSpeak from "../../assets/BarbieSpeak.png"
+import lupaIcon from "../../assets/lupaIcon.png"
 
 function Menu() {
 
     const navigate = useNavigate()
+
+    useEffect(() =>{
+        const token = localStorage.getItem('token')
+        if(!token){
+            navigate('/')
+        }
+    }, [navigate])
+
+    const handleLogout = ()=>{
+        localStorage.removeItem('token')
+        localStorage.removeItem('email')
+        navigate('/login')
+    }
+    
+    const gotoPrincipal = ()=>{
+        navigate('/feed')
+    }
 
 
     return (
@@ -26,10 +45,10 @@ function Menu() {
 
                         <ul>
                             <li class="item-menu">
-                                <a href="#">
-                                   <IconesMenu src={iconSeta}/>
-                                    <span class="linktxt">Disque Out!</span>
-                                </a>
+                                  <BotaoSlideBar>
+                                    <IconesMenu src={iconSeta}/>
+                                    <span class="linktxt">Disque Out!</span>    
+                                    </BotaoSlideBar>                                
                             </li>
                         </ul>
                         
@@ -37,17 +56,17 @@ function Menu() {
                         <Menutitulo>FEED</Menutitulo>
                         <ul>
                             <li class="item-menu">
-                                <a href="#">
-                                   <IconesMenu src={iconHouse}/>
-                                    <span class="linktxt">Página inicial</span>
-                                </a>
+                                   <BotaoSlideBar onClick={gotoPrincipal}>
+                                        <IconesMenu src={iconHouse}/>
+                                        <span class="linktxt">Página inicial</span>
+                                    </BotaoSlideBar>
+                                
                             </li>
                             <li class="item-menu">
-                                <a href="#">
-                                    <span class="icones"><IconesMenu src={iconHouse} class="icones-menu-disque" />
-                                        <img src="./assets/setinhabranca.png" class="icones-menu-disque-hover" /></span>
-                                    <span class="linktxt">Popular</span>
-                                </a>
+                               <BotaoSlideBar>
+                                            <IconesMenu src={iconSeta}/>
+                                            <span class="linktxt">Popular</span>
+                                </BotaoSlideBar>
                             </li>
                         </ul>
                         
@@ -55,11 +74,12 @@ function Menu() {
                     </nav>
                     <div class="seila">
                         <div class="inputItem">
-                            {/* <input type="text" placeholder="Buscar no SpeakOut" class="pesquisar" /> */}
                             <Pesquisar type="text" name="texto" placeholder="Busca no SpeakOut" />
-                            <img src="./assets/lupaIcon.png" class="inputImagem" />
+                            <InputImagem src={lupaIcon} />
                         </div>
-                        <button class="entrar">Entrar</button>
+                        <BotaoMenu onClick={handleLogout}>Logoout</BotaoMenu>
+
+                        <ImagemHeader src={BarbieSpeak}/>
                        
                     </div>
                 

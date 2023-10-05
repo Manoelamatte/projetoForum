@@ -10,17 +10,6 @@ export const ConatinerHeader = styled.header`
 `
 
 export const Pesquisar = styled.input`
-    /* width: 30%;
-    height: 60%;
-    color: rgba(238, 171, 205, 1);
-    border-radius: 40px;
-    text-align: center;
-    font-family: Poppins;
-    border: none;
-    flex-shrink: 0;
-    align-items: center;
-    outline: none;
-    margin-left: 280px; */
     align-items: center;
     width: 490px;
     flex-shrink: 0;
@@ -29,7 +18,7 @@ export const Pesquisar = styled.input`
     border: none;
     padding-top: 0.5rem ;
     padding-bottom: 0.5rem;
-    margin: 9px;
+    margin: 5%;
     font-family: 'Poppins, sans-serif';
     font-size: 14px;
     font-weight: 500;

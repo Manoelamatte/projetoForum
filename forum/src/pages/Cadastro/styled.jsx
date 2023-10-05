@@ -52,10 +52,11 @@ export const ImagemLogo = styled.img`
     weight: 10vw;
 `
 
-export const TituloDireita = styled.h2`
-    padding-left: 40%;
+export const TituloDireita = styled.h3`
+    padding-left: 42%;
     font-family: Arial, Helvetica, sans-serif;
     color: #f448A0;
+    margin-top: 08px;
 `
 export const ImagemSpeakCadastro = styled.img`
   padding-top: 10px;
