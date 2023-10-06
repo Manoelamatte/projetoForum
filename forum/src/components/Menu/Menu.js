@@ -1,7 +1,7 @@
 import { ConatinerHeader, ImagemHeader, Pesquisar } from "../Header/styled";
 import IconeMenu from "../../assets/IconeMenu.png"
 import { BotaoMenu, BotaoSlideBar, IconesMenu, ImagemMenu, MenuLogo, Menutitulo, InputImagem } from "./styled";
-import style from "./style.css";
+
 import { useNavigate } from "react-router-dom";
 import { BotaoLogoOut } from "../../pages/Feed/styled";
 import { useEffect } from "react";
@@ -10,6 +10,7 @@ import iconSeta from "../../assets/iconSeta.png"
 import LogoSpeakOut from "../../assets/LogoSpeakOut.png"
 import BarbieSpeak from "../../assets/BarbieSpeak.png"
 import lupaIcon from "../../assets/lupaIcon.png"
+import style from "./style.css";
 
 function Menu() {
 

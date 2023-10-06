@@ -6,14 +6,14 @@ import Login from "../pages/Login/Login"
 import Publicacao from "../pages/Publicacao/Publicacao"
 
 
-function Rotas(){
+function Rotas(props){
     return(
         <>
         <BrowserRouter>
             <Routes>
                 <Route index element ={<Login/>}/>
                 <Route path="login" element={<Login/>}/>
-                <Route path="feed" element={<Feed/>}/>
+                <Route path="feed" element={<Feed news={props.news} setNews={props.setNews}/>}/>
                 <Route path="cadastro" element={<Cadastro/>}/>
                 <Route path="publicacao" element={<Publicacao/>}/>
             </Routes>

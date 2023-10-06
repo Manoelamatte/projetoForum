@@ -1,14 +1,15 @@
-import Botao from "./components/Botao/Botao";
-import Cadastro from "./pages/Cadastro/Cadastro";
-import Login from "./pages/Login/Login";
+import { useState } from "react";
 import Rotas from "./Rotas/Rotas";
 import { GlobalStyle } from "./StyledGlobal";
 
 function App() {
+
+  const [news, setNews] = useState([])
+
   return (
     <>
     <GlobalStyle/>
-    <Rotas/>
+    <Rotas news={news} setNews={setNews}/>
     </>
   );
 }

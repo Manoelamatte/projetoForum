@@ -8,8 +8,9 @@ import profilecircle from "../../assets/profilecircle.png"
 import { ImagemProfire, PostBoxTexto } from "../Publicacao/styled"
 import { useEffect } from "react"
 import Menu from "../../components/Menu/Menu"
+import Card from "../../components/Card/Card"
 
-function Feed(){
+function Feed(props){
 
     const navigate = useNavigate()
 
@@ -41,7 +42,10 @@ function Feed(){
                     <ImagemProfire src={profilecircle}/>
                </PostContainer>
 
-
+                
+                <Card news={props.news}
+                setNews={props.setNews}
+                />
         
                <BotaoFeed onClick={goToPubli}>
                      <ImagemFeed src={maisBotao}/>
