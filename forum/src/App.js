@@ -4,12 +4,10 @@ import { GlobalStyle } from "./StyledGlobal";
 
 function App() {
 
-  const [news, setNews] = useState([])
-
   return (
     <>
     <GlobalStyle/>
-    <Rotas news={news} setNews={setNews}/>
+    <Rotas/>
     </>
   );
 }

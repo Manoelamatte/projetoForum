@@ -10,7 +10,7 @@ import { useEffect } from "react"
 import Menu from "../../components/Menu/Menu"
 import Card from "../../components/Card/Card"
 
-function Feed(props){
+function Feed(){
 
     const navigate = useNavigate()
 
@@ -43,9 +43,6 @@ function Feed(props){
                </PostContainer>
 
                 
-                <Card news={props.news}
-                setNews={props.setNews}
-                />
         
                <BotaoFeed onClick={goToPubli}>
                      <ImagemFeed src={maisBotao}/>

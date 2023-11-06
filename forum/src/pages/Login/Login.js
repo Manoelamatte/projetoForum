@@ -15,9 +15,10 @@ function Login(){
 
     const navigate = useNavigate()
 
-    const saveUserinfoLocalStorage = (token)=>{
+    const saveUserinfoLocalStorage = (token, email, id)=>{
         localStorage.setItem('token', token)
         localStorage.setItem('email', email)
+        localStorage.setItem('id', id)
     }
 
     const handleSubmit = (e)=>{
@@ -26,7 +27,7 @@ function Login(){
 
         const credencials = {email, senha}
 
-        axios.post('http://localhost:8000/login', credencials,{
+        axios.post('http://localhost:3008/api/auth/login', credencials,{
             headers:{
                 'Content-Type': 'application/json',
 
@@ -34,6 +35,11 @@ function Login(){
         })
         .then(response =>{
             alert(response.data.message)
+             // recuperando informações depois que usario logou
+            const token = response.data.data[0].token;
+            const email = response.data.data[0].email;
+            const id = response.data.data[0].id;
+
             saveUserinfoLocalStorage(response.data.token)
             navigate('/feed')
         })
