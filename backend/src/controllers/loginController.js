@@ -29,6 +29,7 @@ async function login(request, response) {
                             message: `Sucesso! Usuário conectado.`,
                             data: userData
                         });
+                        
                 } else {
                     response
                         .status(401)
