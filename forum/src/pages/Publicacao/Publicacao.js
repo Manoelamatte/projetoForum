@@ -46,10 +46,6 @@ function Publicacao(){
               <PostBoxTexto>
                 fulana
               </PostBoxTexto>
-
-              <BotaoPublicar>
-                Publicar
-              </BotaoPublicar>
             </CardSuperior>
 
             <CardInferior>
@@ -58,9 +54,20 @@ function Publicacao(){
                 O que está acontecendo?
               </TextoAcontecendo>
                   
-                <EscrevaAquiArea type="text" name="texto" placeholder="Escreva aqui...">
-                  
-                </EscrevaAquiArea>
+                <form>
+                <EscrevaAquiArea
+                 type="text" 
+                 name="texto" 
+                 placeholder="Escreva aqui..."
+                 value={ descricao } 
+                 onChange={(e)=>setDescricao(e.target.value)}
+                />
+
+              <BotaoPublicar onClick={handleComment}>
+                Publicar
+              </BotaoPublicar>
+              </form>
+        
                  
             </CardInferior>
 

@@ -33,6 +33,10 @@ function Menu() {
         navigate('/feed')
     }
 
+    const goToPublicacao =()=>{
+        navigate('/publicacao')
+    }
+
 
     return (
         <>
@@ -64,9 +68,9 @@ function Menu() {
                                 
                             </li>
                             <li class="item-menu">
-                               <BotaoSlideBar>
+                               <BotaoSlideBar onClick={goToPublicacao}>
                                             <IconesMenu src={iconSeta}/>
-                                            <span class="linktxt">Popular</span>
+                                            <span class="linktxt">Publicar</span>
                                 </BotaoSlideBar>
                             </li>
                         </ul>

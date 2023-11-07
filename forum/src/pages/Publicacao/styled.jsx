@@ -56,7 +56,7 @@ export const PostBoxTexto = styled.p`
 //     background-color: blue;
 // `
 
-export const EscrevaAquiArea = styled.textarea`
+export const EscrevaAquiArea = styled.input`
     background-color: rgba(255, 212, 234, 1);
     color: rgba(180, 0, 92, 1);
     resize: none;
